@@ -1,0 +1,258 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="2"
+    android:debuggable="true"
+    android:rowCount="1" >
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="265dp"
+        android:layout_height="185dp"
+        android:layout_column="0"
+        android:layout_gravity="center"
+        android:layout_row="0"
+        android:gravity="right|center_vertical"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="70sp" />
+
+    <GridLayout
+        android:id="@+id/pad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_gravity="center"
+        android:layout_row="0"
+        android:columnCount="5"
+        android:columnOrderPreserved="true"
+        android:rowCount="5"
+        android:rowOrderPreserved="true"
+        android:textAlignment="inherit"
+        android:useDefaultMargins="true"
+        tools:context=".Calculator" >
+
+        <Button
+            android:id="@+id/multiplication"
+            android:layout_column="4"
+            android:layout_gravity="center"
+            android:layout_row="1"
+            android:onClick="onClick"
+            android:text="@string/multiply" />
+
+        <Button
+            android:id="@+id/clearEntry"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_row="3"
+            android:text="@string/clear_entry" />
+
+        <Button
+            android:id="@+id/decimal"
+            android:layout_column="2"
+            android:layout_gravity="center"
+            android:layout_row="4"
+            android:onClick="onClick"
+            android:text="@string/decimal" />
+
+        <Button
+            android:id="@+id/number0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="right|center_vertical"
+            android:layout_row="4"
+            android:onClick="onClick"
+            android:text="@string/number0" />
+
+        <Button
+            android:id="@+id/number3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_gravity="center"
+            android:layout_row="3"
+            android:onClick="onClick"
+            android:text="@string/number3" />
+
+        <Button
+            android:id="@+id/number2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_gravity="center"
+            android:layout_row="3"
+            android:onClick="onClick"
+            android:text="@string/number2" />
+
+        <Button
+            android:id="@+id/number1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_row="3"
+            android:onClick="onClick"
+            android:text="@string/number1" />
+
+        <Button
+            android:id="@+id/number6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_gravity="center"
+            android:layout_row="2"
+            android:onClick="onClick"
+            android:text="@string/number6" />
+
+        <Button
+            android:id="@+id/number5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_gravity="center"
+            android:layout_row="2"
+            android:onClick="onClick"
+            android:text="@string/number5" />
+
+        <Button
+            android:id="@+id/number4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:layout_row="2"
+            android:onClick="onClick"
+            android:text="@string/number4" />
+
+        <Button
+            android:id="@+id/number9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_gravity="center"
+            android:layout_row="1"
+            android:onClick="onClick"
+            android:text="@string/number9" />
+
+        <Button
+            android:id="@+id/number8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_gravity="center"
+            android:layout_row="1"
+            android:onClick="onClick"
+            android:text="@string/number8" />
+
+        <Button
+            android:id="@+id/number7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="left|center_vertical"
+            android:layout_row="1"
+            android:onClick="onClick"
+            android:text="@string/number7" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_row="4"
+            android:onClick="onClick"
+            android:text="@string/clear" />
+
+        <Button
+            android:id="@+id/equal"
+            android:layout_column="4"
+            android:layout_gravity="center"
+            android:layout_row="4"
+            android:onClick="onClick"
+            android:text="@string/equal" />
+
+        <Button
+            android:id="@+id/division"
+            android:layout_column="4"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_row="0"
+            android:onClick="onClick"
+            android:text="@string/divide" />
+
+        <Button
+            android:id="@+id/percentage"
+            android:layout_column="3"
+            android:layout_gravity="center"
+            android:layout_row="0"
+            android:onClick="onClick"
+            android:text="@string/percentage" />
+
+        <Button
+            android:id="@+id/squareRoot"
+            android:layout_column="2"
+            android:layout_gravity="right|center_vertical"
+            android:layout_row="0"
+            android:onClick="onClick"
+            android:text="@string/square_root" />
+
+        <Button
+            android:id="@+id/addition"
+            android:layout_width="wrap_content"
+            android:layout_column="4"
+            android:layout_gravity="center"
+            android:layout_row="3"
+            android:onClick="onClick"
+            android:text="@string/add" />
+
+        <Button
+            android:id="@+id/subtraction"
+            android:layout_column="4"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_row="2"
+            android:onClick="onClick"
+            android:text="@string/subtract" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_column="0"
+            android:layout_gravity="left|bottom"
+            android:layout_row="0"
+            android:onClick="onClick"
+            android:text="@string/memory_subtract" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_row="1"
+            android:onClick="onClick"
+            android:text="@string/memory_recall" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_row="2"
+            android:onClick="onClick"
+            android:text="@string/memory_clear" />
+
+        <Button
+            android:id="@+id/memoryAdd"
+            android:layout_column="1"
+            android:layout_gravity="left|center_vertical"
+            android:layout_row="0"
+            android:onClick="onClick"
+            android:text="@string/memory_addition" />
+
+        <Button
+            android:id="@+id/sign"
+            android:layout_column="3"
+            android:layout_gravity="left|center_vertical"
+            android:layout_row="4"
+            android:onClick="onClick"
+            android:text="@string/sign" />
+    </GridLayout>
+
+</GridLayout>
